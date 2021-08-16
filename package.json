@@ -1,0 +1,29 @@
+{
+  "name": "vue-use-query",
+  "version": "1.0.0",
+  "description": "vue use query",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "author": "supyp",
+  "license": "MIT",
+  "keywords": [
+    "vue-query",
+    "react-query",
+    "query",
+    "vue-react-query"
+  ],
+  "files": [
+      "lib",
+      "esm"
+  ],
+  "scripts": {
+    "build:cjs": "tsc",
+    "build:es": "tsc -m esNext --outDir esm",
+    "build": "npm run build:cjs && npm run build:es"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5",
+    "vue": "^3.0.0"
+  }
+}
